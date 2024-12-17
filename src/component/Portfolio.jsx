@@ -2,6 +2,12 @@ import React from 'react'
 import TitleLine from './shared/TitleLine'
 import ImgContainer from './shared/ImgContainer'
 import TitleSection from './shared/TitleSection'
+import cabian from '../assets/imgs/cabin.png'
+import cake from '../assets/imgs/cake.png'
+import circus from '../assets/imgs/circus.png'
+import game from '../assets/imgs/game.png'
+import safe from '../assets/imgs/safe.png'
+import submarine from '../assets/imgs/submarine.png'
 export default function Portfolio() {
   return (
     <>
@@ -11,23 +17,23 @@ export default function Portfolio() {
       <div className="container py-5">
        <div className="row gy-4">
        <div className="col-lg-4">
-       <ImgContainer imgSrc='src/assets/imgs/cabin.png' description='cabin image' />
+       <ImgContainer imgSrc={cabian} description='cabin image' />
        </div>
        <div className="col-lg-4">
-       <ImgContainer imgSrc='src/assets/imgs/cake.png' description='cake image' />
+       <ImgContainer imgSrc={cake} description='cake image' />
        </div>
        <div className="col-lg-4">
-       <ImgContainer imgSrc='src/assets/imgs/circus.png' description='circus image' />
+       <ImgContainer imgSrc={circus} description='circus image' />
        </div>
       
        <div className="col-lg-4">
-       <ImgContainer imgSrc='src/assets/imgs/game.png' description='game image' />
+       <ImgContainer imgSrc={game} description='game image' />
        </div>
        <div className="col-lg-4">
-       <ImgContainer imgSrc='src/assets/imgs/safe.png' description='safe image' />
+       <ImgContainer imgSrc={safe} description='safe image' />
        </div>
        <div className="col-lg-4">
-       <ImgContainer imgSrc='src/assets/imgs/submarine.png' description='submarine image' />
+       <ImgContainer imgSrc={submarine} description='submarine image' />
        </div>
        </div>      
       </div>

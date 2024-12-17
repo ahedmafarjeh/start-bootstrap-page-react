@@ -1,11 +1,12 @@
 import React from 'react'
 import TitleLine from './shared/TitleLine'
+import myImage from '../assets/imgs/avataaars.svg'
 export default function Header() {
 return (
     <>
      <header className='header  py-5'>
       <div className="image d-flex justify-content-center mb-5">
-        <img className='img-fluid' src="./src/assets/imgs/avataaars.svg" alt="avatar image" />
+        <img className='img-fluid' src={myImage} alt="avatar image" />
       </div>
       <div className="title d-flex justify-content-center">
         <h1 className='text-white text-uppercase '>Start Bootstrap</h1>
