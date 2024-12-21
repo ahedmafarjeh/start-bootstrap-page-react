@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router'
 export default function Navbar() {
   return (
   <nav className="navbar navbar-expand-lg navbar-dark sticky-top py-3">
@@ -10,9 +10,9 @@ export default function Navbar() {
     </button>
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav ms-auto ">
-        <a className="nav-link  fw-bolder fs-5 me-4" aria-current="page" href="#">Portfolio</a>
-        <a className="nav-link  fw-bolder fs-5 me-4" href="#">About</a>
-        <a className="nav-link  fw-bolder fs-5" href="#">Contact</a>
+        <Link className="nav-link  fw-bolder fs-5 me-4" to={'/'} aria-current="page" >Portfolio</Link>
+        <Link className="nav-link  fw-bolder fs-5 me-4" to={'/about'} >About</Link>
+        <Link className="nav-link  fw-bolder fs-5" to={'/contact'} >Contact</Link>
       
       </div>
     </div>

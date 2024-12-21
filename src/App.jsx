@@ -7,6 +7,7 @@ import Portfolio from './component/Portfolio.jsx'
 import About from './component/About.jsx'
 import ContactMe from './component/ContactMe.jsx'
 import Footer from './component/Footer.jsx'
+import {Route,Routes } from 'react-router'
 function App() {
 
 
@@ -14,9 +15,11 @@ function App() {
     <>
     <Navbar />
     <Header />
-    <Portfolio />
-    <About />
-    <ContactMe />
+    <Routes >
+      <Route path='/' element={<Portfolio/>}></Route>
+      <Route path='/about' element={<About/>}></Route>
+      <Route path='/contact' element={<ContactMe/>}></Route>
+    </Routes>
     <Footer />
     </>
   )
